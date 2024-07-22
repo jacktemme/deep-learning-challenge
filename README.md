@@ -1,7 +1,7 @@
 # Alphabet Soup Charity Report 
 
 ## Overview of the Analysis
-This repository employs a neural network model from the Tensor Flow library to help the nonprofit organzation Alphabet Soup determine how likely an applicant that requests funding will be successful in their venture. The model is trained on 80% of the data, and features are based off of a variety of determining factors of the applicant such as, income amount, ask amount, affiliation, etc. The remaining 20% of the data is used to evaluate the model's performance by comparing predicted success outcomes with the actual results. The overall goal of this model is to help this non profit better assess the potential risks of approving funding for an application and therefore allowing the company to make more informed decisions with their money allocation.
+This repository employs a neural network model from the Tensor Flow library to help the nonprofit organzation Alphabet Soup determine how likely an applicant that requests funding will be successful in their venture. The model is trained on 80% of the data, and features are based off of a variety of determining factors of the applicant such as, income amount, ask amount, affiliation, etc. The remaining 20% of the data is used to evaluate the model's performance by comparing predicted success outcomes with the actual results. The overall goal of this model is to help this nonprofit better assess the potential risks of approving funding for an application and therefore allowing the company to make more informed decisions with their money allocation.
 
 ## Results
 
@@ -12,7 +12,7 @@ This repository employs a neural network model from the Tensor Flow library to h
 
 ### Compiling, Training, and Evaluating the Model
 
-* For my neural network model two hidden layers were used with the relu activation function. 30 neurons were in the first layer, followed by 15 in the next layer. The final output layer used a singular neuron with a sigmoid activation function to correctly output a binary classification for this model.
+* For the neural network model two hidden layers were used with the relu activation function. 30 neurons were in the first layer, followed by 15 in the next layer. The final output layer used a singular neuron with a sigmoid activation function to correctly output a binary classification for this model.
 * The neural network model had a accuracy of 73.04% when used on the testing data, which was close, but not able to achieve the desired target of 75% accuracy. Therefore, the model is on the right track but more fine tuning would need to be done to create more accurate outputs.
 * In order to slightly increase the output of this model, the activation function was changed to a relu instead of tanh in the hidden layers and the number of neurons and epochs were decreased. 
 
