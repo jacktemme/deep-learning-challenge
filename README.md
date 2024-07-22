@@ -6,17 +6,19 @@ This repository employs a neural network model from the Tensor Flow library to h
 ## Results
 
 ### Data Preprocessing
-* The target of this data set was the binary classification on whether the funding for the application was deemed successful
-* The features of the data that the neural network was trained on was the Affiliation, Classification, Organization, Use, Status, Income Amount, Ask Amount and Special Considerations of the Applicant.
-* The Name and EIN number were dropped as they would not impact the outcome of the applicants success.
+* The target of this data set was the binary classification on whether the funding for the application was deemed successful. 
+* The features of the data that the neural network was trained on was the Affiliation, Classification, Organization, Use, Status, Income Amount, Ask Amount and Special Considerations of the applicant.
+* The Name and EIN number from the data were dropped as they only differentiate the applicant would not impact the outcome of the applicants success.
 
 ### Compiling, Training, and Evaluating the Model
 
-* 
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
+* For my neural network model two hidden layers were used with the relu activation function. 30 neurons were in the first layer, followed by 15 in the next layer. The final output layer used a singular neuron with a sigmoid activation function to correctly output a binary classification for this model.
+* The neural network model had a accuracy of 73.04% when used on the testing data, which was close, but not able to achieve the desired target of 75% accuracy. Therefore, the model is on the right track but more fine tuning would need to be done to create more accurate outputs.
+* In order to slightly increase the output of this model, the activation function was changed to a relu instead of tanh in the hidden layers and the number of neurons and epochs were decreased. 
 
 
 ## Summary
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+Overall, this neural network model was close to reaching Alphabet Soup's target of 75% accuracy in determining the success outcome when funding an applicant, but still fell short. The fact that decreasing neurons and epochs of this model increased accuracy suggests that the model had a tendency to overfit the data. This is likely because the model trained intensively on the outliers and noise in the data, becoming less accurate at the overall classification of the applicant's success. Therefore, the best way to create a more accurate model would be to more intensively process the data before running it through the neural network. The data has lot of features for the applicant and some might impact the outcome more than others. So it could be beneficial to use a principal component analysis to reduce the noise of the data and hopefully help the model make more accurate predictions. 
+
+
